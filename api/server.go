@@ -1483,7 +1483,6 @@ func (s *Server) authMiddleware() gin.HandlerFunc {
 			return
 		}
 
-
 		tokenString := tokenParts[1]
 
 		// 黑名单检查
@@ -2154,3 +2153,4 @@ func (s *Server) handleGetPublicTraderConfig(c *gin.Context) {
 
 	c.JSON(http.StatusOK, result)
 }
+
